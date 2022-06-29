@@ -10,19 +10,25 @@ public class Main {
             case "basketball":
                 playable = new Basketball();
                 break;
+            case "volleyball":
+                playable = new Volleyball();
+                break;
             case "guitar":
                 playable = new Guitar();
+                break;
+            case "flute":
+                playable = new Flute();
                 break;
             case "violin":
                 playable = new Violin();
                 break;
+            
         }
         play(playable);
     }
 
     public static void play(Playable playable) {
         playable.play();
-        playable.kick();
         if (playable instanceof Football) {
             Football football = (Football) playable;
             football.kick();
