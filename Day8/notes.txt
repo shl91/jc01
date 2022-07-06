@@ -1,0 +1,23 @@
+values are stored in RAM and called master copy. Each thread maintains its own copy in cache
+ghost read -> thread reads its own copy
+synchronized locks master copy
+volatile keyword makes threads read master copy
+volatile and synchronized are primitive variables
+
+atomic 
+    wrapper class
+    use as AtomicIntegers
+    combination of synchronized and volatile
+    int++ is risky for concurrent reading as you need to first read and then write
+    to circumvent it, atomic gives access to methods like incrementandget()
+
+thread1.join()->makes the executing thread wait for thread1
+
+follow Jacob Jenkov's Java articles
+
+assignment
+create a thread and pass a number
+create the number of thread
+print starting 
+sleep no of thread for no of millisecond
+print ending 
